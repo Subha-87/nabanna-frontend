@@ -8,50 +8,29 @@ const nextConfig = {
 
         pathname: "/ItReq/**", // specify a path pattern
       },
-      {
-        protocol: "https",
-        hostname: "https://nabanna-backend.onrender.com", // Replace with the hostname of your image server
-
-        pathname: "/api/ItReq/**", // specify a path pattern
-      },
+    
       {
         protocol: "https",
         hostname: "https://nabanna-backend.onrender.com",
 
         pathname: "/EstimateFolder/**",
       },
-      {
-        protocol: "https",
-        hostname: "https://nabanna-backend.onrender.com",
-        pathname: "/api/EstimateFolder/**",
-      },
+     
       {
         protocol: "https",
         hostname: "https://nabanna-backend.onrender.com",
 
         pathname: "/RequisitionFolder/**",
       },
-      {
-        protocol: "https",
-        hostname: "https://nabanna-backend.onrender.com",
-        pathname: "/api/RequisitionFolder/**",
-      },
+      
       {
         protocol: "https",
         hostname: "https://nabanna-backend.onrender.com",
 
         pathname: "/ApprovalFolder/**",
       },
-      {
-        protocol: "https",
-        hostname: "httpss://nabanna-backend.onrender.com",
-        pathname: "/api/ApprovalFolder/**",
-      },
-      {
-        protocol: "https",
-        hostname: "https://nabanna-backend.onrender.com",
-        pathname: "/api/WorkOrderFolder/**",
-      },
+      
+      
       {
         protocol: "https",
         hostname: "https://nabanna-backend.onrender.com",

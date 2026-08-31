@@ -56,7 +56,7 @@ export default function AIQueryLayout() {
     setLoading(true);
 
     try {
-      const res = await axios.post("/api/AIagent/ai/ask", {
+      const res = await axios.post(`${backendUrl}/AIagent/ai/ask`, {
         query: userMessage,
         threadId: threadIdRef.current,
       });

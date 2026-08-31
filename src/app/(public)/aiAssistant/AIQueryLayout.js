@@ -25,9 +25,9 @@ export default function AIQueryLayout() {
 
     setLastQuery(query);
     setLoading(true);
-
+    const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL
     try {
-      const response = await axios.post("/api/AIagent/ai/ask", { query,threadId }); // send user query with threadID //
+      const response = await axios.post(`${backendUrl}/AIagent/ai/ask`, { query,threadId }); // send user query with threadID //
       setResponse(response.data.message);
     } catch (error) {
       const { generalError } = handleAxiosError(error);
