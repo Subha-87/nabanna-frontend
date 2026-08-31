@@ -3,59 +3,59 @@ const nextConfig = {
   images: {
     remotePatterns: [
       {
-        protocol: "http",
-        hostname: "10.10.119.160", // Replace with the hostname of your image server
-        port: "5000",
+        protocol: "https",
+        hostname: "https://nabanna-backend.onrender.com", // Replace with the hostname of your image server
+
         pathname: "/ItReq/**", // specify a path pattern
       },
       {
-        protocol: "http",
-        hostname: "10.10.119.160", // Replace with the hostname of your image server
+        protocol: "https",
+        hostname: "https://nabanna-backend.onrender.com", // Replace with the hostname of your image server
 
         pathname: "/api/ItReq/**", // specify a path pattern
       },
       {
-        protocol: "http",
-        hostname: "10.10.119.160",
-        port: "5000",
+        protocol: "https",
+        hostname: "https://nabanna-backend.onrender.com",
+
         pathname: "/EstimateFolder/**",
       },
       {
-        protocol: "http",
-        hostname: "10.10.119.160",
+        protocol: "https",
+        hostname: "https://nabanna-backend.onrender.com",
         pathname: "/api/EstimateFolder/**",
       },
       {
-        protocol: "http",
-        hostname: "10.10.119.160",
-        port: "5000",
+        protocol: "https",
+        hostname: "https://nabanna-backend.onrender.com",
+
         pathname: "/RequisitionFolder/**",
       },
       {
-        protocol: "http",
-        hostname: "10.10.119.160",
+        protocol: "https",
+        hostname: "https://nabanna-backend.onrender.com",
         pathname: "/api/RequisitionFolder/**",
       },
       {
-        protocol: "http",
-        hostname: "10.10.119.160",
-        port: "5000",
+        protocol: "https",
+        hostname: "https://nabanna-backend.onrender.com",
+
         pathname: "/ApprovalFolder/**",
       },
       {
-        protocol: "http",
-        hostname: "10.10.119.160",
+        protocol: "https",
+        hostname: "httpss://nabanna-backend.onrender.com",
         pathname: "/api/ApprovalFolder/**",
       },
       {
-        protocol: "http",
-        hostname: "10.10.119.160",
+        protocol: "https",
+        hostname: "https://nabanna-backend.onrender.com",
         pathname: "/api/WorkOrderFolder/**",
       },
       {
-        protocol: "http",
-        hostname: "10.10.119.160",
-        port: "5000",
+        protocol: "https",
+        hostname: "https://nabanna-backend.onrender.com",
+
         pathname: "/**",
       },
     ],
