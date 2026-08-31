@@ -1,4 +1,4 @@
-const express = require("express");
+/*const express = require("express");
 const next = require("next");
 const { createProxyMiddleware } = require("http-proxy-middleware");
 
@@ -19,7 +19,7 @@ app.prepare().then(() => {
      ✅ DEV ONLY API PROXY
      http://localhost:4000/api → http://localhost:5000
   ========================= */
-  if (dev) {
+  /*if (dev) {
     server.use(
       "/api",
       createProxyMiddleware({
@@ -43,4 +43,4 @@ app.prepare().then(() => {
       `Nabanna-App Frontend is running in ${dev ? "DEV" : "PROD"} mode on http://${HOST}:${PORT}`,
     );
   });
-});
+});*/
