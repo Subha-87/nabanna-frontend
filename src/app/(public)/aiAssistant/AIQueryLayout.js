@@ -21,11 +21,14 @@ export default function AIQueryLayout() {
   //console.log(threadId)
 
   const askAI = async () => {
+
+    const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL 
+    console.log(backendUrl)
     if (!query.trim()) return toast.warning("Ask Something to AI ....");
 
     setLastQuery(query);
     setLoading(true);
-    const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL
+    
     try {
       const response = await axios.post(`${backendUrl}/AIagent/ai/ask`, { query,threadId }); // send user query with threadID //
       setResponse(response.data.message);

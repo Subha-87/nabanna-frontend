@@ -40,7 +40,11 @@ export default function AIQueryLayout() {
     }
   }, []);
 
+
   const askAI = async (overrideQuery) => {
+
+    const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL 
+    console.log(backendUrl)
     const userMessage = (overrideQuery || query).trim();
     if (!userMessage) return toast.warning("Ask something to AI...");
 
@@ -54,7 +58,7 @@ export default function AIQueryLayout() {
     setMessages((prev) => [...prev, userMsg]);
     setQuery("");
     setLoading(true);
-
+   
     try {
       const res = await axios.post(`${backendUrl}/AIagent/ai/ask`, {
         query: userMessage,
