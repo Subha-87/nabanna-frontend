@@ -10,7 +10,7 @@ export const AxiosContext = createContext(null);
 
 export default function AxiosProvider({ children }) {
   const { authSessionId } = useAuth();
-  const BASE_URL = process.env.NEXT_PUBLIC_BACKEND_URL || "/api";
+  const BASE_URL = process.env.NEXT_PUBLIC_BACKEND_URL;
   const axiosInstance = useMemo(() => {
     const instance = axios.create({
       baseURL: BASE_URL,
