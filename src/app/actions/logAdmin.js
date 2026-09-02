@@ -23,7 +23,7 @@ export async function loginUser(loginData) {
     // Find User in the Database by email //
     const result = await Admins.findOne({ email: loginData.email });
     // Check For User Exist or not
-    //console.log(result)
+    console.log(result)
     if (!result) return { error: "No User Exsist" };
 
     // User Found Then Compare Password //
