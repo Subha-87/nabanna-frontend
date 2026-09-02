@@ -31,7 +31,7 @@ const AdminLogin = () => {
     const { resetForm, setSubmitting } = action;
     try {
       const result = await loginUser(values); // Call Server Actions//
-      console.log("Login Result")
+      console.log("Login Result:",result)
       if (result?.success) {
         toast.success("Login Successful");
         router.push("/dashboard");
