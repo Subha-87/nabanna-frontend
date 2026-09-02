@@ -4,6 +4,7 @@ const MONGO_URI = process.env.MONGODB_URI
 
 //require('dotenv').config({path:'../.env.local'});
 const connectDB = async() => {
+    console.log("Data Base Connection Functioned Called..")
      try {
         if(!MONGO_URI){
             throw new Error("MONGO_URI is not defined in environment variables")
